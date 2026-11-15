@@ -1,16 +1,40 @@
-## Hi there 👋
+# jiazuowang
 
-<!--
-**jiazuowang/jiazuowang** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+**Computer Vision | Robotics Perception | Embedded AI**
 
-Here are some ideas to get you started:
+I work on practical machine learning problems, with an interest in the path from real sensor data to model evaluation and deployment. My experience includes RGB-D data preparation, image segmentation, 6D pose estimation demos, and embedded inference debugging.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## How I approach projects
+
+- **Start with the data.** Work with camera captures, inspect inputs, and check assumptions before comparing models.
+- **Make experiments inspectable.** Separate model selection from evaluation, examine class-wise errors, and record the trade-offs behind a result.
+- **Connect models to engineering constraints.** Consider memory, tensor layout, quantization, and integration alongside predictive performance.
+
+## Selected projects
+
+### [RGB-D Cup Dataset for 6D Pose Estimation](https://github.com/jiazuowang/FoundationPose-dataset-cup)
+
+Custom RGB-D sequences and demo integration for NVIDIA FoundationPose using an Intel RealSense D405 and a cup mesh generated with Tencent Hunyuan.
+
+- Two documented sequences: 115 frames at 1280 x 720 and 233 frames at 640 x 480.
+- Custom data loading for pose registration, tracking, and visualization.
+- Focus: connecting real camera data with a pose-estimation pipeline. The underlying FoundationPose method is NVIDIA's work.
+
+### [Product Review Sentiment Classification](https://github.com/jiazuowang/ee6483-sentiment-classification)
+
+My implementation work within an EE6483 group course project, using an instructor-provided dataset.
+
+- Compared 19 configurations with grouped cross-validation to keep normalized duplicate reviews together.
+- Selected a class-weighted word-and-character TF-IDF SVM using development macro F1.
+- Recorded **91.42% accuracy** and **0.8357 macro F1** on a separate labelled holdout; these are not official test-set scores.
+- Published code and aggregate results. The course data and original group report are excluded.
+
+## Technical experience
+
+**Vision and learning:** Python, PyTorch, TensorFlow, OpenCV, scikit-learn, YOLO, U-Net, FoundationPose.
+
+**Sensors and deployment:** RealSense D405, ONNX export, RK3588 / RKNN calibration and quantization, AXERA tensor-layout and inference debugging.
+
+I am interested in internship opportunities in computer vision, robotics perception, and embedded AI.
+
+我关注真实数据、可信的实验比较和模型落地，希望通过具体实现、清楚的个人贡献和可检查的结果展示工程能力。
