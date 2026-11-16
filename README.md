@@ -12,6 +12,15 @@ I work on practical machine learning problems, with an interest in the path from
 
 ## Selected projects
 
+### [Text Review — NLP Desktop Application](https://github.com/jiazuowang/text-review-nlp)
+
+A group NLP project that I initiated and developed into a working prototype with Codex assistance, followed by team revisions and demonstration work.
+
+- Connected dataset preparation, model comparison, evaluation, and a local desktop interface.
+- Published three trained classifiers with document import, model comparison, batch analysis, and report export.
+- Preserved aggregate experiment results and limitations; public-release checks: **67 passed, 1 dataset-dependent check skipped**.
+- Included anonymous team acknowledgements; personal details and the original text corpus are excluded.
+
 ### [RGB-D Cup Dataset for 6D Pose Estimation](https://github.com/jiazuowang/FoundationPose-dataset-cup)
 
 Custom RGB-D sequences and demo integration for NVIDIA FoundationPose using an Intel RealSense D405 and a cup mesh generated with Tencent Hunyuan.
